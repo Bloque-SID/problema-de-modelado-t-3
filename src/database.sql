@@ -4,7 +4,9 @@ CREATE TABLE Cliente(
   NoIdentificacion VARCHAR(11) PRIMARY KEY,
   Nombres VARCHAR(50) NOT NULL,
   Apellidos VARCHAR(50) NOT NULL,
-  Edad SMALLINT NOT NULL
+  Edad SMALLINT NOT NULL,
+  IdSuscripcion INTEGER,
+  FOREIGN KEY(IdSuscripcion) REFERENCES Suscripcion(IdSuscripcion)
 );
 
 CREATE TABLE Instructor(
@@ -17,7 +19,9 @@ CREATE TABLE Instructor(
 CREATE TABLE Suscripcion(
   IdSuscripcion INTEGER PRIMARY KEY,
   Estado VARCHAR(20) CHECK (Estado = 'Activo' AND Estado = 'Inactivo') NOT NULL,
-  Precio DOUBLE PRECISION NOT NULL
+  Precio DOUBLE PRECISION NOT NULL,
+  IdTipoSuscripcion SMALLINT,
+  FOREIGN KEY(IdTipoSuscripcion) REFERENCES TipoSuscripcion(IdTipoSuscripcion)
 );
 
 CREATE TABLE TipoSuscripcion(
@@ -36,4 +40,13 @@ CREATE TABLE Acudiente(
   Parentesco VARCHAR(25) NOT NULL,
   PRIMARY KEY(NoIdentificacion, Nombres),
   FOREIGN KEY(NoIdentificacion) REFERENCES Cliente(NoIdentificacion)
+);
+
+CREATE TABLE Cliente_Instructor(
+  NoIdentificacion VARCHAR(11),
+  NoIdentificacion_Ins VARCHAR(11),
+  Tiempo INTEGER,
+  FOREIGN KEY(NoIdentificacion) REFERENCES Cliente(NoIdentificacion),
+  FOREIGN KEY(NoIdentificacion_Ins) REFERENCES Instructor(NoIdentificacion_Ins),
+  PRIMARY KEY(NoIdentificacion, NoIdentificacion_Ins)
 );
