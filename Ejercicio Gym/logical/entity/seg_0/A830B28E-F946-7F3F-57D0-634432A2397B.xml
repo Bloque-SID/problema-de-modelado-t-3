@@ -1,0 +1,86 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A830B28E-F946-7F3F-57D0-634432A2397B" name="Instructor">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:20:47 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="C.C" id="02384545-E22C-B160-4695-A2178E5A00F3">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:22:11 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Nombre" id="8E56B419-EFE8-274F-950E-65B215853161">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:23:20 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Sueldo" id="14C77F2A-6C9F-BF68-DE13-4CBBAEFA41E8">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:24:34 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellido" id="E1B79807-E89E-DCA5-8FA2-41B28869B058">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-27 00:02:27 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="E80E9051-2155-1921-7A3D-AA31C99D712C" name="Personal PK">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:23:18 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>02384545-E22C-B160-4695-A2178E5A00F3</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

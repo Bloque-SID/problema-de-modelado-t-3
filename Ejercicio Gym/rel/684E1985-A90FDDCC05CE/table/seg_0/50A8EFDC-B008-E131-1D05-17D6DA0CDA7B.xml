@@ -1,0 +1,74 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="50A8EFDC-B008-E131-1D05-17D6DA0CDA7B" name="Instructor">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<generatorID>A830B28E-F946-7F3F-57D0-634432A2397B</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="C_C" id="EBA7CCEE-721F-A6BF-1BD9-11D52F73D059">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<generatorID>02384545-E22C-B160-4695-A2178E5A00F3</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Nombre" id="681DCB8A-1196-EDC5-078E-41C32E26D3F2">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<generatorID>8E56B419-EFE8-274F-950E-65B215853161</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Sueldo" id="0AEF5E19-4AF4-80DE-7D22-C4F481A88A0B">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<generatorID>14C77F2A-6C9F-BF68-DE13-4CBBAEFA41E8</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Apellido" id="9E216001-5077-0081-1887-9992507FDB6C">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<generatorID>E1B79807-E89E-DCA5-8FA2-41B28869B058</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B8B3E49C-3A05-CE9C-E09B-B9E89759CD1A" name="Instructor_PK">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<generatorID>E80E9051-2155-1921-7A3D-AA31C99D712C</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EBA7CCEE-721F-A6BF-1BD9-11D52F73D059"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

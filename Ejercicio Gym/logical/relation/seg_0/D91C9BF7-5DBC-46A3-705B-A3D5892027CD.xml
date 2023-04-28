@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Paga" directorySegmentName="seg_0" id="D91C9BF7-5DBC-46A3-705B-A3D5892027CD">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-27 00:10:24 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<sourcePk>3CB6D339-3DDF-6B90-A2DD-55BAD908A769</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>26195CE7-93E8-28D0-0355-88BD627B0B2E</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>A8F4EFCA-0EB2-1373-5201-19CD894029EC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Cuenta con" directorySegmentName="seg_0" id="7F0CCAB1-B522-BE17-B973-5B9378567AD7">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-27 00:10:51 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<sourcePk>3CB6D339-3DDF-6B90-A2DD-55BAD908A769</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>26195CE7-93E8-28D0-0355-88BD627B0B2E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>75B16D43-ACE1-9EB7-43A8-159671BB043C</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="75B16D43-ACE1-9EB7-43A8-159671BB043C" name="Acudientes">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:38:32 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Nombre" id="3BA85749-9DD0-255D-E7C8-F578375FE799">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:38:48 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Celular" id="0C95EE67-55C4-0A79-1CD1-1D21BC5E4F6E">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:39:41 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Apellido" id="9C5A201E-C4BE-FDE5-6CF1-CD48A01589EF">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-27 00:06:58 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 CHAR</dataTypeSize>
+<ownDataTypeParameters>25 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Parentesco " id="574338B0-FF55-92AF-B25C-D311DFD3A3AE">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-27 00:07:22 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID cliente" id="D1320BF6-0F5A-21C7-4A5B-0204E7128FD6">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-27 00:10:51 UTC</createdTime>
+<generatorID>7F0CCAB1-B522-BE17-B973-5B9378567AD7</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<referedAttribute>F17DDEAA-6DAD-FF21-DCE1-D6633966446F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="2A61DDF1-4A23-FB95-9C5A-EB0DDB65B682" name="Acudientes PK">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:39:38 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>9C5A201E-C4BE-FDE5-6CF1-CD48A01589EF</attributeRef>
+<attributeRef>574338B0-FF55-92AF-B25C-D311DFD3A3AE</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

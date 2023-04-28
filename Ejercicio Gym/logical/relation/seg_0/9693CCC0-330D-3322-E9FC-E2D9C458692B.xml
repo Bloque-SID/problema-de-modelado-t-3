@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Entrena a" directorySegmentName="seg_0" id="9693CCC0-330D-3322-E9FC-E2D9C458692B">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-27 00:09:33 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>*</sourceCardinality>
+<sourceEntity>A830B28E-F946-7F3F-57D0-634432A2397B</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>26195CE7-93E8-28D0-0355-88BD627B0B2E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<attribute name="Tiempo" id="CE4D301C-06B8-53C4-7976-3E2EABF6D8D4">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-27 00:09:44 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</attribute>
+</attributes>
+</Relation>

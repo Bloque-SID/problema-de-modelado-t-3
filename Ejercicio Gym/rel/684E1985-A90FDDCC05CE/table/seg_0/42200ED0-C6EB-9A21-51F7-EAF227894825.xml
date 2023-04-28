@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="42200ED0-C6EB-9A21-51F7-EAF227894825" name="Entrena_a">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="Instructor_C_C" id="30FD270C-3538-1002-A40C-9AA4626C33B4">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="A9EA9AAA-84B9-C54B-24EA-85BFDAB1EB94" referredColumn="EBA7CCEE-721F-A6BF-1BD9-11D52F73D059"/>
+</associations>
+</Column>
+<Column name="Cliente_ID_cliente" id="390E332C-1EC9-537D-AA9F-641DCEC73394">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="DAAC1FDA-FE4C-0176-1DA1-A89D4121A8D5" referredColumn="983D410B-17D2-1081-2F42-D404FE5FD4A8"/>
+</associations>
+</Column>
+<Column name="Tiempo" id="110C504C-9F9C-E320-1272-F12272B6B4A7">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<generatorID>CE4D301C-06B8-53C4-7976-3E2EABF6D8D4</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT014</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<isRelationshipColumn>true</isRelationshipColumn>
+<isDependOnFK_AsMandatory>true</isDependOnFK_AsMandatory>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1201D4BA-6FB2-196B-5408-A34D63C609B4" name="Entrena_a_PK">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30FD270C-3538-1002-A40C-9AA4626C33B4"/>
+<colUsage columnID="390E332C-1EC9-537D-AA9F-641DCEC73394"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2A5F3C65-6166-CF6D-2EDD-2414D3784F6A" name="Entrena_a_Instructor_FK">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<generatorID>9693CCC0-330D-3322-E9FC-E2D9C458692B</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="30FD270C-3538-1002-A40C-9AA4626C33B4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FDC22EE9-AA1E-6519-A4DD-7C0D317699DB" name="Entrena_a_Cliente_FK">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<generatorID>9693CCC0-330D-3322-E9FC-E2D9C458692B</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="390E332C-1EC9-537D-AA9F-641DCEC73394"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

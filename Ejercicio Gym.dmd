@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="Ejercicio Gym" id="45778B60-1C7C-B654-BBDA-AE01C47B4FB5" version="3.5">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:15:38 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>45778B60-1C7C-B654-BBDA-AE01C47B4FB5</designId>
+</OSDM_Design>

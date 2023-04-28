@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A8F4EFCA-0EB2-1373-5201-19CD894029EC" name="Subscripción">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:15:59 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="IdSubscripción" id="201BFC76-EBC0-A685-318B-967782DDD19E">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:18:05 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 CHAR</dataTypeSize>
+<ownDataTypeParameters>20 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Precio" id="2F43FE84-26A7-0CA3-4EB8-DD38168EEECA">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:19:07 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,7,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Estado" id="F4084E0C-00E7-4873-9449-809B7DD7960E">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:20:09 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="ID cliente" id="36AA4A9B-8E05-9640-0117-824AE5AEEAD4">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-27 00:10:24 UTC</createdTime>
+<generatorID>D91C9BF7-5DBC-46A3-705B-A3D5892027CD</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<referedAttribute>F17DDEAA-6DAD-FF21-DCE1-D6633966446F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="idTipoSubscripción" id="4F7F7586-A53A-6152-9545-C652020BF850">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:30:50 UTC</createdTime>
+<generatorID>1C929F43-FB45-6963-58F0-14EEA162BB1F</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="true"/>
+</engineerTo>
+<referedAttribute>2D82AF13-5953-C1EB-2C9C-8BAC61AE2BE7</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F61ED033-2D13-2A38-E3A4-B1C5CD1602A8" name="Subscripción PK">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-25 14:19:04 UTC</createdTime>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="684E1985-6E1E-4356-81A4-A90FDDCC05CE" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>201BFC76-EBC0-A685-318B-967782DDD19E</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

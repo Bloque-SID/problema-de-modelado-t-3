@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="F96BBE72-B964-49CC-1995-2E0690221F2D" containerWithKeyObject="05DEEC2B-540B-F89A-8F98-D28CB7B31EA0" localFKIndex="6EA91C74-A669-00C5-D803-CE05B6FC70F7" name="Subscripción_Tipo_subscripción_FK">
+<createdBy>johan jojoa</createdBy>
+<createdTime>2023-04-28 20:33:16 UTC</createdTime>
+<generatorID>1C929F43-FB45-6963-58F0-14EEA162BB1F</generatorID>
+<ownerDesignName>Ejercicio Gym</ownerDesignName>
+<referredTableLongName>Tipo_subscripción</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>0A55982C-1E59-F8CF-D391-F711992E5188</referredTableID>
+<keyObject>78DC408F-71B4-3E89-530B-2CF2C2CE821F</keyObject>
+<referredKeyID>78DC408F-71B4-3E89-530B-2CF2C2CE821F</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>idTipoSubscripción</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
