@@ -1,19 +1,18 @@
 CREATE DATABASE Gimnasio;
 
-CREATE TABLE Cliente(
-  NoId VARCHAR(11) PRIMARY KEY,
-  Nombres VARCHAR(50) NOT NULL,
-  Apellidos VARCHAR(50) NOT NULL,
-  Edad SMALLINT NOT NULL,
-  IdSuscripcion INTEGER,
-  FOREIGN KEY(IdSuscripcion) REFERENCES Suscripcion(IdSuscripcion)
-);
-
 CREATE TABLE Instructor(
   NoIdentificacion VARCHAR(11) PRIMARY KEY,
   Sueldo DOUBLE PRECISION NOT NULL,
   Nombres VARCHAR(50) NOT NULL,
   Apellidos VARCHAR(50) NOT NULL
+);
+
+CREATE TABLE TipoSuscripcion(
+  IdTipoSuscripcion SMALLINT CHECK (IdTipoSuscripcion >= 1 AND IdTipoSuscripcion <= 4) 
+  PRIMARY KEY,
+  Tipo VARCHAR(20) 
+  CHECK(Tipo = 'Mensual' OR Tipo = 'Trimestral' OR Tipo = 'Semestral' OR Tipo = 'Anual')
+  NOT NULL
 );
 
 CREATE TABLE Suscripcion(
@@ -24,12 +23,13 @@ CREATE TABLE Suscripcion(
   FOREIGN KEY(IdTipoSuscripcion) REFERENCES TipoSuscripcion(IdTipoSuscripcion)
 );
 
-CREATE TABLE TipoSuscripcion(
-  IdTipoSuscripcion SMALLINT CHECK (IdTipoSuscripcion >= 1 AND IdTipoSuscripcion <= 4) 
-  PRIMARY KEY,
-  Tipo VARCHAR(20) 
-  CHECK(Tipo = 'Mensual' OR Tipo = 'Trimestral' OR Tipo = 'Semestral' OR Tipo = 'Anual')
-  NOT NULL
+CREATE TABLE Cliente(
+  NoId VARCHAR(11) PRIMARY KEY,
+  Nombres VARCHAR(50) NOT NULL,
+  Apellidos VARCHAR(50) NOT NULL,
+  Edad SMALLINT NOT NULL,
+  IdSuscripcion INTEGER,
+  FOREIGN KEY(IdSuscripcion) REFERENCES Suscripcion(IdSuscripcion)
 );
 
 CREATE TABLE Acudiente(
