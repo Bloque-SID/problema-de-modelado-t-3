@@ -1,1 +1,3 @@
-INSERT INTO TABLE_NAME() VALUES();
+INSERT INTO TipoSuscripcion(IdTipoSuscripcion, Tipo) VALUES(
+  1, 'Mensual'
+);

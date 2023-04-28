@@ -1,7 +1,7 @@
 CREATE DATABASE Gimnasio;
 
 CREATE TABLE Cliente(
-  NoIdentificacion VARCHAR(11) PRIMARY KEY,
+  NoId VARCHAR(11) PRIMARY KEY,
   Nombres VARCHAR(50) NOT NULL,
   Apellidos VARCHAR(50) NOT NULL,
   Edad SMALLINT NOT NULL,
@@ -33,20 +33,20 @@ CREATE TABLE TipoSuscripcion(
 );
 
 CREATE TABLE Acudiente(
-  NoIdentificacion VARCHAR(11),
+  NoId VARCHAR(11),
   Nombres VARCHAR(50) NOT NULL,
   Apellidos VARCHAR(50) NOT NULL,
   Telefono VARCHAR(11) UNIQUE NOT NULL,
   Parentesco VARCHAR(25) NOT NULL,
-  PRIMARY KEY(NoIdentificacion, Nombres),
-  FOREIGN KEY(NoIdentificacion) REFERENCES Cliente(NoIdentificacion)
+  PRIMARY KEY(NoId, Nombres),
+  FOREIGN KEY(NoId) REFERENCES Cliente(NoId)
 );
 
 CREATE TABLE Cliente_Instructor(
+  NoId VARCHAR(11),
   NoIdentificacion VARCHAR(11),
-  NoIdentificacion_Ins VARCHAR(11),
   Tiempo INTEGER,
-  FOREIGN KEY(NoIdentificacion) REFERENCES Cliente(NoIdentificacion),
-  FOREIGN KEY(NoIdentificacion_Ins) REFERENCES Instructor(NoIdentificacion_Ins),
-  PRIMARY KEY(NoIdentificacion, NoIdentificacion_Ins)
+  FOREIGN KEY(NoId) REFERENCES Cliente(NoId),
+  FOREIGN KEY(NoIdentificacion) REFERENCES Instructor(NoIdentificacion),
+  PRIMARY KEY(NoId, NoIdentificacion)
 );
